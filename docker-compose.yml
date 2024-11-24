@@ -1,0 +1,14 @@
+version: '27.0.3'
+
+services:
+
+  db:
+    image: postgres:15.2
+    container_name: container_database_postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=db-postgres-jberdeja
+      - POSTGRES_USER=jhonny
+      - POSTGRES_PASSWORD=clavejhonny
+    ports:
+      - "5434:5432"
